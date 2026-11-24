@@ -1,0 +1,172 @@
+{
+  "action": "publish existing expense explorer and align architecture/layout/design with Case Economics",
+  "target": {
+    "repository": "step3software/accounting",
+    "sourceBranch": "main",
+    "sourceRevision": "f45a8011e26e08107ddc447bbf5f65c7c9e5cb51",
+    "sourceInstructions": "Only README.md existed at the selected initial revision. Explicit repository URL overrides cwd.",
+    "publicationBranch": "feat/expense-explorer-ce-alignment",
+    "mergeAuthorized": false
+  },
+  "standards": {
+    "repository": "Wisteria-Psychological-Services/project-management-orchestration",
+    "revision": "9dbea2b52cd076c8b52174edeb06ed807d3aa7d1",
+    "catalogHashesVerified": true,
+    "documents": [
+      {
+        "path": "AGENTS.md",
+        "blobSha": "3e42b2956fb0ad7618e5fbdb19e5146ad64e401c",
+        "sha256": "6f832fe94b7a9b1a77560bf811bf6aef76da2567009db5e9d815a33f720d1888"
+      },
+      {
+        "path": "docs/agent-workflows/intent-routing.md",
+        "blobSha": "8ae0f29d9a92424be17eb5750947f9695deead93",
+        "sha256": "3b79f640a17fcdaa15ace38ee77a8bd7eda611a62ccfc9ac9c336bfd5f9387ed"
+      },
+      {
+        "path": "config/repositories.json",
+        "blobSha": "e91edec4d7c53966f0880991dcc9fe7af1a1463e",
+        "sha256": "00f76eb618856b51f1c75ee191519a92b575e0231a4d1a2368693a5a76472056"
+      },
+      {
+        "path": "README.md",
+        "blobSha": "5c8cc53a1177c625f5a9b236ea33ce37eb44fc7d",
+        "sha256": "847dab7c34dcee9a575ca90d5b50ac383b4fde239d97145fa79dd562be6d28e5"
+      },
+      {
+        "path": "standards/catalog.json",
+        "blobSha": "84f26ad5165dc2f10b4b116cdc5cef8a862a8b65",
+        "sha256": "5850f5eb70397db5dccede9b9dbbf5de27861a8cfcb8676cda6337b608532651"
+      },
+      {
+        "path": "docs/agent-workflows/feature.md",
+        "blobSha": "938dc2de4ccdcf2a57e8116e3e3f96131c4b8e92",
+        "sha256": "52279cc4869aa56c9a40efe7c2e136177feb807053783039c3c4e7dfa95170b3"
+      },
+      {
+        "path": "docs/agent-workflows/refactor.md",
+        "blobSha": "8d9f402b9c1fbcaa77572bda359c5ef3d62b6796",
+        "sha256": "6c736d463a7ca9d3f0410220b41429d76433d41b721a734940262486627d3e42"
+      },
+      {
+        "path": "docs/standards/readable-code.md",
+        "blobSha": "00768466fbe5a66ae6ba43e7c29b281185a86900",
+        "sha256": "fdd9cb4cf7af821d5a3ab5267020b7ce2b8ee93e76cc419ecc436e478655e58e"
+      },
+      {
+        "path": "docs/pr-development-coordination.md",
+        "blobSha": "3812ea0c9cba46cf338ddf2b661e314fe14b0975",
+        "sha256": "939b59a53584e981798733a2292b3318f00d15ee01f230cb63a87f2eaf22bf0e"
+      },
+      {
+        "path": "docs/development-workflow.md",
+        "blobSha": "c4ec6d15a75cb19aa5801520487ad80f1c71d6fd",
+        "sha256": "efee35a23b01792973ac212ef21c304610baefa23bc21b1575e6670f25fa55b6"
+      }
+    ]
+  },
+  "reference": {
+    "repository": "Wisteria-Psychological-Services/wisteria-case-economics",
+    "revision": "8bfd119ac9a3cb495f75cdd455f1c87081c769c7",
+    "role": "Read-only architecture and design reference; no source writes or state sharing",
+    "documents": [
+      {
+        "path": "AGENTS.md",
+        "blobSha": "262da57d2accc5cf7e6abfeffefe8c6218e875d7",
+        "sha256": "5367e89b0081365280b818ea5797078aefe41bd43c11e4c5c9934e49f0aa7197"
+      },
+      {
+        "path": "README.md",
+        "blobSha": "9eec571f6d32479391b18beb2b3efbbb200e0819",
+        "sha256": "5474cffea84d54af22c8aef6eeabfdbde6fa440139fddff2cf0fc71d5bfb2734"
+      },
+      {
+        "path": "docs/README.md",
+        "blobSha": "4ae7534cb8bce407af690104c40297f0e7482a18",
+        "sha256": "9e6c5f16f7e9abefbae9c7d36cfa42b2614788011601b9db4afc012f11cf172e"
+      },
+      {
+        "path": "docs/status.md",
+        "blobSha": "977b38ec22953e3c4a5445c048e915b44c723030",
+        "sha256": "ebed3502497acfcb8ede36a33d08bc9588eef76d88c61c32950b3894c23fc29a"
+      },
+      {
+        "path": "docs/development.md",
+        "blobSha": "34aefb0d6e9a7d179d3bd3dca5dfacf81a3e5cf5",
+        "sha256": "676d90b5e70d79383324c412c909bbd807a13ca03af4cd414dfd244ef7e12ff8"
+      },
+      {
+        "path": "docs/data-handling.md",
+        "blobSha": "5e628477d5156951356b624d50a28659c40a5de3",
+        "sha256": "33312d1925393dce236d049a30f2def0fdf827ea5ee977ea6cd90911f7816880"
+      },
+      {
+        "path": "docs/web-launcher.md",
+        "blobSha": "8fe15ad3870d973b9703930d03609b4978f427cd",
+        "sha256": "c2457c9c8be3131651fcd887af4e3fb0e7d3f28dc46aa5ded254027c74707592"
+      },
+      {
+        "path": "package.json",
+        "blobSha": "7d19f844aa6de91be0409f24a4a4961be8fc76de",
+        "sha256": "6961c23753d30dd633c47487f8bca60bae00778b5c17c7a08ebaf886ee6849d7"
+      },
+      {
+        "path": "web/server.mjs",
+        "blobSha": "75b6f19bbb9d283b58eb1a6fc59bc44119efd1be",
+        "sha256": "28866428940e8f4795a7ae43bd71a2fd11fb0654de606eead27c3eb2d0972e23"
+      },
+      {
+        "path": "web/public/index.html",
+        "blobSha": "3c67f10e81546ea6bdaf1c65c995ab0b7e51ddb2",
+        "sha256": "709de925123e368ea0291d50ffb05a7a4d869915e21a1845c2310a1fd4f87e16"
+      },
+      {
+        "path": "web/public/app.mjs",
+        "blobSha": "ea5fd31d0ebb7ce2b29cfafa5945e070d9b8d248",
+        "sha256": "8ddac3fd77c4b5ede41d6dbee79f9b721d74bab601116723282198bbac334c49"
+      },
+      {
+        "path": "web/public/app.css",
+        "blobSha": "68d263e7f709bdfccc91d3e9bb859998f6e400c7",
+        "sha256": "3b6a91dbff59de2dd52790e1351bf705756a84a5fcd53b38840547559472e421"
+      },
+      {
+        "path": "web/public/components/file-picker.mjs",
+        "blobSha": "ba2aa5a0df169d92cccf7ad97e2bf2dc462c6cdb",
+        "sha256": "3a5e0adeff36c2b1062a3eb12d3950f95658469df0289a1f91b901eb091a7f43"
+      },
+      {
+        "path": "web/public/components/microsoft-session.mjs",
+        "blobSha": "ddabcf8c12f157e8f63aba168c481404991ef8db",
+        "sha256": "d2ebd1fa2d3bc244531f927d5de327e39e46c52805433768cb0fb73b55f4f797"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "blobSha": "7987ca334535dfa74a52116f143e607317f0b50d",
+        "sha256": "121a9b7c4fc442db93672e579c4d99ca533067a243430fb47a620262eb03b106"
+      }
+    ]
+  },
+  "scope": [
+    "Domain behavior preserved",
+    "Local read-only Node launcher",
+    "Modular browser shell/components/views",
+    "Reusable sage workbench conventions",
+    "Private synced-folder adapter",
+    "Same browser/domain code for offline export",
+    "Public source and synthetic examples only"
+  ],
+  "verification": {
+    "engine": "passed",
+    "web": "passed; one Windows symlink privilege skip",
+    "launcherBuild": "passed",
+    "offlineSyntheticBuild": "passed",
+    "browser": "Passed: synthetic source loading, keyboard drill-down, inclusive months, partial-month credits, all-expense scope, monthly table, source preview, search/clear, back/forward retention, invalid-load preservation, zero and inactive states, 1280px desktop and 320px no-overflow reflow. Final console had no errors/warnings.",
+    "offlineBrowser": "Not run: test browser disallows file URLs. Same browser modules are exercised in the loopback launcher; synthetic offline build passed.",
+    "domainPreserved": {
+      "comparedTo": "Prior expense explorer domain source",
+      "sameNormalizedBytes": true,
+      "sha256NormalizedLF": "8052bdf33efc2e5363de13f5f02539279859a5f1dad83b79592c170e205772e1"
+    }
+  }
+}

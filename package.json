@@ -1,0 +1,17 @@
+{
+  "name": "accounting",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "packageManager": "npm@11.19.1",
+  "scripts": {
+    "start:web": "node web/server.mjs",
+    "build:web": "node scripts/build-web.mjs",
+    "build:offline": "node scripts/build-offline.mjs",
+    "test": "node --test tests/profit-and-loss/*.test.mjs tests/web/*.test.mjs",
+    "test:engine": "node --test tests/profit-and-loss/*.test.mjs",
+    "test:web": "node --test tests/web/*.test.mjs"
+  },
+  "dependencies": { "echarts": "6.1.0", "esbuild": "0.28.2" }
+}

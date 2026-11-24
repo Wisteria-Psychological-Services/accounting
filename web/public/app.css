@@ -1,0 +1,14 @@
+.app-footer { max-width: 1104px; margin: auto; padding: 0 27px 18px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; color: var(--ce-muted); font-size: 12px; }
+.report-picker { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 9px; align-items: end; margin-bottom: 10px; }
+.report-picker select { display: block; margin-top: 6px; }
+[data-panel="report-files"] .ce-actions { margin-block: 16px 8px; }
+.current-report { margin-top: 22px; border-top: 1px solid var(--ce-line); padding-top: 18px; }
+.current-report dl { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 7px 16px; margin-bottom: 0; }
+.current-report dt { color: var(--ce-muted); }
+.current-report dd { margin: 0; overflow-wrap: anywhere; }
+.empty-state p { margin-block: 8px 15px; color: var(--ce-muted); }
+@media (max-width: 650px) {
+  .report-picker { grid-template-columns: 1fr 1fr; }
+  .report-picker label { grid-column: 1 / -1; }
+  .app-footer { padding-inline: 16px; }
+}
