@@ -1,0 +1,22 @@
+# Financial inputs and generated deliverables stay outside public source.
+/data/
+/private/
+/originals/
+/outputs/
+/dist/
+/.evidence/
+/.cache/
+node_modules/
+*.csv
+*.tsv
+*.xlsx
+*.xlsm
+*.zip
+*.log
+.env
+.env.*
+!.env.example
+!examples/*.csv
+accounting.config.json
+Thumbs.db
+.DS_Store

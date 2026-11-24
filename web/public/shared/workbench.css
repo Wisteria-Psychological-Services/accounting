@@ -1,0 +1,66 @@
+/* Case Economics workbench conventions. Provenance and scope: docs/architecture.md. */
+body { margin: 0; background: #191e1c; }
+.workbench {
+  color-scheme: dark;
+  --ce-page: #191e1c;
+  --ce-panel: #202623;
+  --ce-input: #171c19;
+  --ce-line: #3b4841;
+  --ce-text: #edf4ef;
+  --ce-muted: #a8bbb0;
+  --ce-accent: #a6e9cb;
+  --ce-on-accent: #142b21;
+  --ce-selected: #2a4236;
+  --ce-warning: #f4cb8b;
+  --ce-warning-bg: #342c21;
+  --ce-danger: #ffb3ab;
+  font: 14px/1.5 "Segoe UI", system-ui, sans-serif;
+  color: var(--ce-text);
+  background: var(--ce-page);
+  min-height: 100vh;
+}
+.workbench * { box-sizing: border-box; }
+.workbench [hidden] { display: none !important; }
+.workbench :is(h1, h2, h3, p, ol) { margin: 0; }
+.workbench h1 { font-size: 29px; font-weight: 650; line-height: 1.18; letter-spacing: -.025em; }
+.workbench h2 { font-size: 18px; font-weight: 650; line-height: 1.35; }
+.workbench h3 { font-size: 16px; font-weight: 650; line-height: 1.35; }
+.workbench a { color: var(--ce-accent); text-underline-offset: 3px; }
+.workbench .ce-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 24px; border-bottom: 1px solid var(--ce-line); }
+.workbench .ce-brand { display: flex; align-items: center; gap: 9px; font-weight: 650; }
+.workbench .ce-mark { display: inline-grid; place-items: center; flex: none; width: 27px; height: 27px; border-radius: 6px; background: var(--ce-selected); color: var(--ce-accent); font-size: 17px; line-height: 1; }
+.workbench .ce-nav { display: flex; flex-wrap: wrap; gap: 5px; padding: 7px 24px; border-bottom: 1px solid var(--ce-line); }
+.workbench .ce-nav a { display: inline-flex; align-items: center; min-height: 37px; padding: 6px 10px; border-radius: 6px; color: var(--ce-text); text-decoration: none; }
+.workbench .ce-nav a:hover { background: var(--ce-panel); }
+.workbench .ce-nav a[aria-current="page"] { background: var(--ce-selected); color: var(--ce-accent); font-weight: 650; }
+.workbench .ce-workspace { max-width: 1104px; margin-inline: auto; padding: 25px 27px 24px; }
+.workbench :is(.ce-top, .ce-nav) { padding-inline: max(24px, calc((100% - 1050px) / 2)); }
+.workbench .ce-intro { margin-bottom: 20px; }
+.workbench .ce-intro p { color: var(--ce-muted); margin-top: 5px; }
+.workbench label { display: block; font-weight: 600; }
+.workbench :is(select, input, button) { font: inherit; color: var(--ce-text); border: 1px solid var(--ce-line); border-radius: 6px; min-height: 37px; padding: 6px 10px; background: var(--ce-input); }
+.workbench :is(select, input) { width: 100%; min-width: 0; }
+.workbench select { cursor: pointer; }
+.workbench button { cursor: pointer; background: var(--ce-panel); }
+.workbench button:hover:enabled { background: var(--ce-selected); }
+.workbench button:disabled { cursor: default; }
+.workbench :is(button, select, input):disabled { opacity: .65; }
+.workbench :is(select, input, button, a):focus-visible { outline: 2px solid var(--ce-accent); outline-offset: 2px; }
+.workbench .ce-primary { background: var(--ce-accent); color: var(--ce-on-accent); border-color: var(--ce-accent); font-weight: 650; }
+.workbench .ce-primary:hover:enabled { background: #c3f4dc; }
+.workbench .ce-panel { padding: clamp(13px, 2.5vw, 22px); background: var(--ce-panel); border: 1px solid var(--ce-line); border-radius: 9px; }
+.workbench .ce-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.workbench .ce-coverage { color: var(--ce-muted); font-size: 12px; }
+.workbench .ce-status { color: var(--ce-muted); font-size: 13px; min-height: 1.5em; }
+.workbench .ce-warning { margin-top: 8px; padding: 8px 10px; background: var(--ce-warning-bg); color: var(--ce-warning); border-radius: 4px; font-size: 13px; }
+.workbench .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.workbench .skip-link { position: fixed; top: -100px; left: 12px; z-index: 10; background: var(--ce-panel); padding: 10px; }
+.workbench .skip-link:focus { top: 12px; }
+@media (max-width: 650px) {
+  .workbench :is(.ce-top, .ce-nav) { padding-inline: 16px; }
+  .workbench .ce-workspace { padding: 21px 16px; }
+  .workbench :is(input, select) { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workbench *, .workbench *::before, .workbench *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
